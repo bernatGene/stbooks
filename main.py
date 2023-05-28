@@ -4,7 +4,6 @@ import cv2
 from pyzbar.pyzbar import decode
 from isbnlib import meta, is_isbn10, is_isbn13
 from isbnlib.registry import bibformatters
-# from camera_input_live import camera_input_live
 
 
 SERVICE = "openl"
@@ -58,7 +57,4 @@ if value:
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     img_holder.image(gray)
     count += 1
-
-from camera_input_live import camera_input_live
-
 
